@@ -1,0 +1,112 @@
+$breakpoints: (
+  "sm": "576px",
+  "md": "768px",
+  "lg": "992px",
+  "xl": "1200px",
+  "xxl": "1400px",
+);
+
+$containerWidths: (
+  "sm": "540px",
+  "md": "720px",
+  "lg": "960px",
+  "xl": "1140px",
+  "xxl": "1320px",
+);
+
+$noOfGridsCount: (
+  "sm": 12,
+  "md": 12,
+  "lg": 12,
+  "xl": 12,
+  "xxl": 12,
+);
+
+.grid {
+  --gridColor: #f43f5e;
+  --gutterColor: #fda4af;
+  --gutterSize: 0.75rem;
+  --gridOpacity: 0.75;
+
+  --noOfGrids: 12;
+  --width: 100%;
+  --mq: "xs";
+  --gridSize: calc((var(--width) / var(--noOfGrids) - (var(--gutterSize) * 2)));
+
+  margin: auto;
+  width: var(--width);
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: var(--gridOpacity);
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--gutterColor) 0px,
+    var(--gutterColor) var(--gutterSize),
+    var(--gridColor) var(--gutterSize),
+    var(--gridColor) calc(var(--gridSize) + var(--gutterSize)),
+    var(--gutterColor) calc(var(--gridSize) + var(--gutterSize)),
+    var(--gutterColor) calc(var(--gridSize) + (var(--gutterSize) * 2))
+  );
+
+  &::before {
+    content: var(--mq);
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: auto;
+    font-weight: bold;
+    font-size: 2rem;
+    background: #000;
+    color: #ffffff;
+    padding: 0.5rem;
+    letter-spacing: 2px;
+    font-family: monospace;
+  }
+
+  &.for-container {
+    @each $mq, $bkpt in $breakpoints {
+      $containerWidth: map-get(
+        $map: $containerWidths,
+        $key: $mq,
+      );
+
+      $noOfGrids: map-get(
+        $map: $noOfGridsCount,
+        $key: $mq,
+      );
+
+      @media (min-width:#{$bkpt}) {
+        --noOfGrids: #{$noOfGrids};
+        --width: #{$containerWidth};
+        --mq: "#{$mq}";
+        --gridSize: calc(
+          (var(--width) / var(--noOfGrids) - (var(--gutterSize) * 2))
+        );
+      }
+    }
+  }
+
+  &.for-container-fluid {
+    @each $mq, $bkpt in $breakpoints {
+      $containerWidth: 100%;
+
+      $noOfGrids: map-get(
+        $map: $noOfGridsCount,
+        $key: $mq,
+      );
+
+      @media (min-width:#{$bkpt}) {
+        --noOfGrids: #{$noOfGrids};
+        --width: #{$containerWidth};
+        --mq: "#{$mq}";
+        --gridSize: calc(
+          (var(--width) / var(--noOfGrids) - (var(--gutterSize) * 2))
+        );
+      }
+    }
+  }
+}

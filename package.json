@@ -1,0 +1,18 @@
+{
+  "name": "@dchandrashekhar/bootstrap-grid-debugger",
+  "version": "1.0.0",
+  "description": "bootstrap grid debugger",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass index.scss dist/index.css --style=compressed"
+  },
+  "keywords": [
+    "bootstrap-grid",
+    "bootstrap"
+  ],
+  "author": "dchandra",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.71.0"
+  }
+}
