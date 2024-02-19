@@ -1,6 +1,6 @@
 ## Boostrap Grid Debugger
 
-![Preview](./readme_files/bootstrap-grid-preview.gif)
+![Preview](https://raw.githubusercontent.com/Chandu4221/bootstrap-grid-debugger/aebc68df7c09c30e96b6f0abc6426f70b56d76de/readme_files/bootstrap-grid-preview.gif)
 
 ### Usage
 
@@ -42,23 +42,23 @@ export default App;
 
 # XXL (col-xxl-2)
 
-![](./readme_files/XXL.png)
+![](https://raw.githubusercontent.com/Chandu4221/bootstrap-grid-debugger/aebc68df7c09c30e96b6f0abc6426f70b56d76de/readme_files/XXL.png)
 
 # XL (col-xl-3)
 
-![](./readme_files/XL.png)
+![](https://raw.githubusercontent.com/Chandu4221/bootstrap-grid-debugger/aebc68df7c09c30e96b6f0abc6426f70b56d76de/readme_files/XL.png)
 
 # LG (col-lg-4)
 
-![](./readme_files/LG.png)
+![](https://raw.githubusercontent.com/Chandu4221/bootstrap-grid-debugger/aebc68df7c09c30e96b6f0abc6426f70b56d76de/readme_files/LG.png)
 
 # MD (col-md-6)
 
-![](./readme_files/MD.png)
+![](https://raw.githubusercontent.com/Chandu4221/bootstrap-grid-debugger/aebc68df7c09c30e96b6f0abc6426f70b56d76de/readme_files/MD.png)
 
 # SM (col-sm-8)
 
-![](./readme_files/SM.png)
+![](https://raw.githubusercontent.com/Chandu4221/bootstrap-grid-debugger/aebc68df7c09c30e96b6f0abc6426f70b56d76de/readme_files/SM.png)
 
 ---
 

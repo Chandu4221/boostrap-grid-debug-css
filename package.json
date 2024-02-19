@@ -1,6 +1,6 @@
 {
   "name": "@dchandrashekhar/bootstrap-grid-debugger",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "bootstrap grid debugger",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,10 @@
   ],
   "author": "dchandra",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chandu4221/bootstrap-grid-debugger"
+  },
   "devDependencies": {
     "sass": "^1.71.0"
   }
