@@ -33,24 +33,27 @@ $noOfGridsCount: (
   --mq: "xs";
   --gridSize: calc((var(--width) / var(--noOfGrids) - (var(--gutterSize) * 2)));
 
-  margin: auto;
-  width: var(--width);
-  height: 100vh;
-  position: fixed;
-  z-index: -1;
-  left: 0;
-  right: 0;
-  top: 0;
-  opacity: var(--gridOpacity);
-  background-image: repeating-linear-gradient(
-    to right,
-    var(--gutterColor) 0px,
-    var(--gutterColor) var(--gutterSize),
-    var(--gridColor) var(--gutterSize),
-    var(--gridColor) calc(var(--gridSize) + var(--gutterSize)),
-    var(--gutterColor) calc(var(--gridSize) + var(--gutterSize)),
-    var(--gutterColor) calc(var(--gridSize) + (var(--gutterSize) * 2))
-  );
+  &::after {
+    content: "";
+    margin: auto;
+    width: var(--width);
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: var(--gridOpacity);
+    background-image: repeating-linear-gradient(
+      to right,
+      var(--gutterColor) 0px,
+      var(--gutterColor) var(--gutterSize),
+      var(--gridColor) var(--gutterSize),
+      var(--gridColor) calc(var(--gridSize) + var(--gutterSize)),
+      var(--gutterColor) calc(var(--gridSize) + var(--gutterSize)),
+      var(--gutterColor) calc(var(--gridSize) + (var(--gutterSize) * 2))
+    );
+  }
 
   &::before {
     content: var(--mq);
