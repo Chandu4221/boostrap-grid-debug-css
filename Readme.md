@@ -1,18 +1,27 @@
 ## Boostrap Grid Debugger
 
 ![Preview](https://raw.githubusercontent.com/Chandu4221/bootstrap-grid-debugger/aebc68df7c09c30e96b6f0abc6426f70b56d76de/readme_files/bootstrap-grid-preview.gif)
+
 ### Usage
+
 usage with plain HTML through CDN
+
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@dchandrashekhar/bootstrap-grid-debugger@1.0.4/dist/index.css"/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@dchandrashekhar/bootstrap-grid-debugger@1.0.6/dist/index.css"
+/>
 ```
+
 ```html
-<body class="grid for-container container"> <!-- add `grid` and `for-container` classes here  -->
+<body class="grid for-container container">
+  <!-- add `grid` and `for-container` classes here  -->
   ...
-</body> 
+</body>
 ```
 
 ---
+
 ### Usage
 
 usage with React.js, Vue.js
@@ -29,7 +38,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-      // added grid for-container class here
+    // added grid for-container class here
     <div className="container grid for-container">
       <div className="row">
         <div className="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-sm-8">
