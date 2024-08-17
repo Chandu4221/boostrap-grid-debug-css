@@ -1,6 +1,6 @@
 {
   "name": "@dchandrashekhar/bootstrap-grid-debugger",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "bootstrap grid debugger",
   "main": "index.js",
   "scripts": {
